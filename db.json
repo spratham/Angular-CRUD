@@ -1,0 +1,86 @@
+{
+  "productList": [
+    {
+      "productName": "Banana",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 20,
+      "comment": "Fresh banana",
+      "date": "2022-11-10T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "Banana",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 20,
+      "comment": "Fresh banana",
+      "date": "2022-11-10T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "Apple",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 100,
+      "comment": "Green Apples",
+      "date": "2022-11-24T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "xyz",
+      "category": "Vegetables",
+      "freshness": "Second hand",
+      "price": 3800,
+      "comment": "DOnt Buy",
+      "date": "2022-11-26T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "productName": "Printer",
+      "category": "Electroics",
+      "freshness": "Brand New",
+      "price": 234,
+      "comment": "new",
+      "date": "2022-11-23T18:30:00.000Z",
+      "id": 5
+    },
+    {
+      "productName": "PC",
+      "category": "Electroics",
+      "freshness": "Brand New",
+      "price": 43000,
+      "comment": "Nice",
+      "date": "2022-11-11T18:30:00.000Z",
+      "id": 6
+    },
+    {
+      "productName": "Cucumber",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 10,
+      "comment": "TAsty",
+      "date": "2022-11-08T18:30:00.000Z",
+      "id": 7
+    },
+    {
+      "productName": "jumbo nts",
+      "category": "Fruits",
+      "freshness": "Refusbished",
+      "price": 24,
+      "comment": "bad",
+      "date": "2022-11-10T18:30:00.000Z",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
