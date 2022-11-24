@@ -11,6 +11,7 @@ export class DialogComponent {
   freshnessList = ['Brand New', 'Second hand', 'Refusbished'];
   productForm!: FormGroup;
   actionBtn: string = 'Save';
+  formTitle: string='Add';
   constructor(
     private formBuilder: FormBuilder,
     private api: ApiService,
@@ -38,6 +39,7 @@ export class DialogComponent {
       this.productForm.controls['date'].setValue(this.editData.date);
       this.productForm.controls['comment'].setValue(this.editData.comment);
       this.actionBtn = 'Update'; //to change the button name
+      this.formTitle='Update';
       console.log(this.editData);
     }
   }
