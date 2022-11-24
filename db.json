@@ -1,8 +1,8 @@
 {
   "productList": [
     {
-      "productName": "Banana",
-      "category": "Fruits",
+      "productName": "Carrot",
+      "category": "Vegetables",
       "freshness": "Brand New",
       "price": 20,
       "comment": "Fresh banana",
@@ -28,15 +28,6 @@
       "id": 3
     },
     {
-      "productName": "xyz",
-      "category": "Vegetables",
-      "freshness": "Second hand",
-      "price": 3800,
-      "comment": "DOnt Buy",
-      "date": "2022-11-26T18:30:00.000Z",
-      "id": 4
-    },
-    {
       "productName": "Printer",
       "category": "Electroics",
       "freshness": "Brand New",
@@ -44,15 +35,6 @@
       "comment": "new",
       "date": "2022-11-23T18:30:00.000Z",
       "id": 5
-    },
-    {
-      "productName": "PC",
-      "category": "Electroics",
-      "freshness": "Brand New",
-      "price": 43000,
-      "comment": "Nice",
-      "date": "2022-11-11T18:30:00.000Z",
-      "id": 6
     },
     {
       "productName": "Cucumber",
@@ -71,6 +53,24 @@
       "comment": "bad",
       "date": "2022-11-10T18:30:00.000Z",
       "id": 8
+    },
+    {
+      "productName": "Kiwi",
+      "category": "Fruits",
+      "freshness": "Brand New",
+      "price": 14,
+      "comment": "3 pc",
+      "date": "2022-11-24T18:30:00.000Z",
+      "id": 9
+    },
+    {
+      "productName": "Pasta",
+      "category": "Vegetables",
+      "freshness": "Second hand",
+      "price": 2,
+      "comment": "tasty",
+      "date": "2022-11-15T18:30:00.000Z",
+      "id": 10
     }
   ],
   "comments": [

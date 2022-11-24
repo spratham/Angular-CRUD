@@ -27,13 +27,20 @@ export class AppComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   constructor(private dialog: MatDialog, private api: ApiService) {}
-  ngOnInit(): void {
+  ngOnInit() {
     this.getAllProducts();
   }
   openDialog() {
-    this.dialog.open(DialogComponent, {
-      width: '50%',
-    });
+    this.dialog
+      .open(DialogComponent, {
+        width: '30%',
+      })
+      .afterClosed() //to render the table on adding new product
+      .subscribe((val) => {
+        if (val === 'save') {
+          this.getAllProducts();
+        }
+      });
   }
   getAllProducts() {
     return this.api.getProduct().subscribe({
@@ -47,6 +54,35 @@ export class AppComponent implements OnInit {
       },
     });
   }
+  editProduct(
+    row: any //passing row values
+  ) {
+    this.dialog
+      .open(DialogComponent, {
+        width: '30%',
+        data: row, //our DialogComponent will have the data of ROW
+      })
+      .afterClosed()
+      //to render the table on adding new product
+      .subscribe((val) => {
+        if (val === 'update') {
+          this.getAllProducts();
+        }
+      });
+  }
+
+  deleteProduct(id: number) {
+    this.api.deleteProduct(id).subscribe({
+      next: (res) => {
+        alert('Product is deleted successfully');
+        this.getAllProducts();
+      },
+      error: () => {
+        alert('Error while deleting the product');
+      },
+    });
+  }
+
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
