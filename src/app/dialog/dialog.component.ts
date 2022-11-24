@@ -41,6 +41,9 @@ export class DialogComponent {
       console.log(this.editData);
     }
   }
+
+// Add product method
+
   addProduct() {
     if (!this.editData) {
       if (this.productForm.valid) {
@@ -59,6 +62,9 @@ export class DialogComponent {
       this.updateProduct();
     }
   }
+
+// Update product method
+
   updateProduct() {
     this.api.putProduct(this.productForm.value, this.editData.id).subscribe({
       next: (res) => {
@@ -66,9 +72,9 @@ export class DialogComponent {
         this.productForm.reset(); //For reseting the form after updation
         this.dialogeRef.close('update'); //For closing the form after updation
       },
-      // error: () => {
-      //   alert('Error while Updating the product');
-      // },
+      error: () => {
+        alert('Error while Updating the product');
+      },
     });
   }
 }

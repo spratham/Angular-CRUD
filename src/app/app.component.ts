@@ -30,6 +30,9 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.getAllProducts();
   }
+
+  //Dialoge Box
+
   openDialog() {
     this.dialog
       .open(DialogComponent, {
@@ -42,6 +45,8 @@ export class AppComponent implements OnInit {
         }
       });
   }
+
+  //Getting the data from api
   getAllProducts() {
     return this.api.getProduct().subscribe({
       next: (res) => {
@@ -54,6 +59,8 @@ export class AppComponent implements OnInit {
       },
     });
   }
+
+  //edit row value method
   editProduct(
     row: any //passing row values
   ) {
@@ -71,6 +78,7 @@ export class AppComponent implements OnInit {
       });
   }
 
+  //delete row method
   deleteProduct(id: number) {
     this.api.deleteProduct(id).subscribe({
       next: (res) => {
