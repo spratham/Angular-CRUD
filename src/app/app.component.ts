@@ -50,7 +50,7 @@ export class AppComponent implements OnInit {
   getAllProducts() {
     return this.api.getProduct().subscribe({
       next: (res) => {
-        this.dataSource = new MatTableDataSource(res); //putting response in our table datascource
+        this.dataSource = new MatTableDataSource(res.reverse()); //putting response in our table datascource
         this.dataSource.paginator = this.paginator;
         this.dataSource.sort = this.sort;
       },
