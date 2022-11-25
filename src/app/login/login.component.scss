@@ -1,0 +1,35 @@
+.card {
+  // margin: auto;
+  padding: 2.5rem;
+  width: 30rem;
+  border: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); //to center
+  background: hsla(205, 46%, 30%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(205, 46%, 30%, 1) 0%,
+    hsla(260, 29%, 36%, 1) 100%
+  );
+}
+
+.form-group {
+  margin: 1rem;
+}
+
+.login-btn {
+  margin-left: 0.9rem;
+}
+a {
+  margin-left: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.card h1,
+h6 {color: #fff;
+}
+label{
+  color: #fff;
+}

@@ -1,0 +1,73 @@
+<div class="container">
+  <div class="row">
+    <div>
+      <div class="card">
+        <div class="text-center">
+          <h1>Sign Up</h1>
+        </div>
+        <form>
+          <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+            <div class="row g-3">
+              <div class="col-sm-7">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="First Name"
+                  formControlName="firstName"
+                  aria-label="First Name"
+                />
+              </div>
+              <div class="col-sm">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Last Name"
+                  formControlName="lastName"
+                  aria-label="Last Name"
+                />
+              </div>
+              <div>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="formGroupExampleInput"
+                  placeholder="Phone number"
+                  formControlName="phoneNumber"
+                />
+              </div>
+              <div class="input-field">
+                <div class="form-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control mt-1"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                    formControlName="email"
+                  />
+                </div>
+                <div class="form-group mb-2">
+                  <input
+                    type="password"
+                    class="form-control mt-1"
+                    id="exampleInputPassword1"
+                    placeholder="Password"
+                    formControlName="password"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary login-btn">
+              Submit
+            </button>
+          </form>
+        </form>
+        <a routerLink="/login" style="color: white"
+          >Already have an account? Click to Login</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
